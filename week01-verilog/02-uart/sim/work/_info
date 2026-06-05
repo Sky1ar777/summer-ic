@@ -1,0 +1,81 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Admin/Desktop/summer-ic/week01-verilog/02-uart/sim
+T_opt
+!s110 1780661475
+Ve6NVPEmQWXJ2mgO?6`f=>1
+Z1 04 10 4 work tb_uart_tx fast 0
+=1-345a60e700e6-6a22bce3-2d6-22fc
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
+n@_opt
+Z4 OL;O;10.6d;65
+R0
+T_opt1
+!s110 1780661499
+V^>I6a2B7YNj6g9Q7m9AP51
+R1
+=1-345a60e700e6-6a22bcfb-355-607c
+R2
+R3
+n@_opt1
+R4
+R0
+T_opt2
+!s110 1780661868
+V7mLjFGg9NIGXUO;:Zk6Oe2
+R1
+=1-345a60e700e6-6a22be6b-3c4-b90
+R2
+R3
+n@_opt2
+R4
+vtb_uart_tx
+Z5 !s110 1780661867
+!i10b 1
+!s100 X@hEYT2NcZD0dGhgWLYH71
+IQP?QF2KcW7f09F_Shj<h01
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1780661765
+8../tb/tb_uart_tx.v
+F../tb/tb_uart_tx.v
+L0 2
+Z7 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z8 !s108 1780661867.000000
+!s107 ../tb/tb_uart_tx.v|
+!s90 ../tb/tb_uart_tx.v|
+!i113 0
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vuart_tx
+R5
+!i10b 1
+!s100 ZYHnfXkalD3CeM;R7ZSH22
+IUGM3P2b`ZnWn=QQK>o=l>3
+R6
+R0
+w1780660061
+8../uart_tx.v
+F../uart_tx.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 ../uart_tx.v|
+!s90 ../uart_tx.v|
+!i113 0
+R9
+R3

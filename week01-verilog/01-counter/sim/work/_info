@@ -1,0 +1,165 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Admin/Desktop/summer-ic/week01-verilog/01-counter/sim
+T_opt
+!s110 1780651093
+Vmn8TlBzWhSaE`^SJc9`_:1
+04 19 4 work tb_clk_divider_duty fast 0
+=1-345a60e700e6-6a229455-a6-5868
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6d;65
+T_opt1
+!s110 1780631308
+V@nP[5_i<SfMYn?4lCI]Go1
+04 10 4 work tb_counter fast 0
+=1-345a60e700e6-6a22470c-31a-1420
+R1
+R2
+n@_opt1
+R3
+R0
+T_opt2
+Z4 !s110 1780649430
+VbFS>87QZIG>?[139bJAoG0
+04 14 4 work tb_clk_divider fast 0
+=1-345a60e700e6-6a228dd6-321-378c
+R1
+R2
+n@_opt2
+R3
+R0
+vclk_divider
+R4
+!i10b 1
+!s100 O:BMjhohCI>VRf^LC7Fdi1
+I[CedBTiioNH8d39ZGhZX90
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1780649414
+8../clk_divider.v
+F../clk_divider.v
+L0 1
+Z6 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z7 !s108 1780649430.000000
+!s107 ../clk_divider.v|
+!s90 -reportprogress|300|../clk_divider.v|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vclk_divider_duty
+Z9 !s110 1780651092
+!i10b 1
+!s100 GP0T37`<Bn=I5X^>K3`g?2
+Ioe2@m`4XZMJfNJz:9W`EC0
+R5
+R0
+w1780650983
+8../clk_divider_duty.v
+F../clk_divider_duty.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z10 !s108 1780651092.000000
+!s107 ../clk_divider_duty.v|
+!s90 -reportprogress|300|../clk_divider_duty.v|
+!i113 0
+R8
+R2
+vcounter
+Z11 !s110 1780631448
+!i10b 1
+!s100 nPc3>4]7S98T==dXX=Wj^0
+IOfg]1Hbb@;hTbQGXVPz4S2
+R5
+R0
+w1780630986
+8../counter.v
+F../counter.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z12 !s108 1780631448.000000
+!s107 ../counter.v|
+!s90 ../counter.v|
+!i113 0
+R8
+R2
+vtb_clk_divider
+R4
+!i10b 1
+!s100 aQOH9l9=lgQ<An=>`BM7L1
+Id?MmNAZPe26^7l`;[kiXS2
+R5
+R0
+w1780649420
+8../tb_clk_divider.v
+F../tb_clk_divider.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../tb_clk_divider.v|
+!s90 -reportprogress|300|../tb_clk_divider.v|
+!i113 0
+R8
+R2
+vtb_clk_divider_duty
+R9
+!i10b 1
+!s100 g]RjJBYNCa6IKiZTo:O<X3
+Ima:a9c`@4kaNV]<<f6Xj?2
+R5
+R0
+w1780651073
+8../tb_clk_divider_duty.v
+F../tb_clk_divider_duty.v
+L0 2
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../tb_clk_divider_duty.v|
+!s90 -reportprogress|300|../tb_clk_divider_duty.v|
+!i113 0
+R8
+R2
+vtb_counter
+R11
+!i10b 1
+!s100 K6P1cT>>lPK?6Wd6S=0_T1
+Ij6]CVXNL@Do71kRMF:QM_0
+R5
+R0
+w1780631057
+8../tb_counter.v
+F../tb_counter.v
+L0 2
+R6
+r1
+!s85 0
+31
+R12
+!s107 ../tb_counter.v|
+!s90 ../tb_counter.v|
+!i113 0
+R8
+R2

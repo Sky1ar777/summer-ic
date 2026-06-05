@@ -1,0 +1,168 @@
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do sim_clk_divider_duty.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 17:18:12 on Jun 05,2026
+# vlog -reportprogress 300 ../clk_divider_duty.v 
+# -- Compiling module clk_divider_duty
+# 
+# Top level modules:
+# 	clk_divider_duty
+# End time: 17:18:12 on Jun 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 17:18:12 on Jun 05,2026
+# vlog -reportprogress 300 ../tb_clk_divider_duty.v 
+# -- Compiling module tb_clk_divider_duty
+# 
+# Top level modules:
+# 	tb_clk_divider_duty
+# End time: 17:18:12 on Jun 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_clk_divider_duty 
+# Start time: 17:18:12 on Jun 05,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.tb_clk_divider_duty(fast)
+# Loading work.clk_divider_duty(fast)
+# time=0  clk_in=0  clk_out=0  cnt=       0
+# time=5000  clk_in=1  clk_out=0  cnt=       0
+# time=10000  clk_in=0  clk_out=0  cnt=       0
+# time=15000  clk_in=1  clk_out=0  cnt=       0
+# time=20000  clk_in=0  clk_out=0  cnt=       0
+# time=25000  clk_in=1  clk_out=0  cnt=       0
+# time=30000  clk_in=0  clk_out=0  cnt=       0
+# time=35000  clk_in=1  clk_out=0  cnt=       0
+# time=40000  clk_in=0  clk_out=0  cnt=       0
+# time=45000  clk_in=1  clk_out=0  cnt=       0
+# time=50000  clk_in=0  clk_out=0  cnt=       0
+# time=55000  clk_in=1  clk_out=0  cnt=       0
+# time=60000  clk_in=0  clk_out=0  cnt=       0
+# time=65000  clk_in=1  clk_out=0  cnt=       0
+# time=70000  clk_in=0  clk_out=0  cnt=       0
+# time=75000  clk_in=1  clk_out=0  cnt=       0
+# time=80000  clk_in=0  clk_out=0  cnt=       0
+# time=85000  clk_in=1  clk_out=0  cnt=       0
+# time=90000  clk_in=0  clk_out=0  cnt=       0
+# time=95000  clk_in=1  clk_out=0  cnt=       0
+# time=100000  clk_in=0  clk_out=0  cnt=       0
+# time=105000  clk_in=1  clk_out=1  cnt=       1
+# time=110000  clk_in=0  clk_out=1  cnt=       1
+# time=115000  clk_in=1  clk_out=1  cnt=       2
+# time=120000  clk_in=0  clk_out=1  cnt=       2
+# time=125000  clk_in=1  clk_out=1  cnt=       3
+# time=130000  clk_in=0  clk_out=1  cnt=       3
+# time=135000  clk_in=1  clk_out=0  cnt=       4
+# time=140000  clk_in=0  clk_out=0  cnt=       4
+# time=145000  clk_in=1  clk_out=0  cnt=       5
+# time=150000  clk_in=0  clk_out=0  cnt=       5
+# time=155000  clk_in=1  clk_out=0  cnt=       6
+# time=160000  clk_in=0  clk_out=0  cnt=       6
+# time=165000  clk_in=1  clk_out=0  cnt=       7
+# time=170000  clk_in=0  clk_out=0  cnt=       7
+# time=175000  clk_in=1  clk_out=0  cnt=       8
+# time=180000  clk_in=0  clk_out=0  cnt=       8
+# time=185000  clk_in=1  clk_out=0  cnt=       9
+# time=190000  clk_in=0  clk_out=0  cnt=       9
+# time=195000  clk_in=1  clk_out=0  cnt=       0
+# time=200000  clk_in=0  clk_out=0  cnt=       0
+# time=205000  clk_in=1  clk_out=1  cnt=       1
+# time=210000  clk_in=0  clk_out=1  cnt=       1
+# time=215000  clk_in=1  clk_out=1  cnt=       2
+# time=220000  clk_in=0  clk_out=1  cnt=       2
+# time=225000  clk_in=1  clk_out=1  cnt=       3
+# time=230000  clk_in=0  clk_out=1  cnt=       3
+# time=235000  clk_in=1  clk_out=0  cnt=       4
+# time=240000  clk_in=0  clk_out=0  cnt=       4
+# time=245000  clk_in=1  clk_out=0  cnt=       5
+# time=250000  clk_in=0  clk_out=0  cnt=       5
+# time=255000  clk_in=1  clk_out=0  cnt=       6
+# time=260000  clk_in=0  clk_out=0  cnt=       6
+# time=265000  clk_in=1  clk_out=0  cnt=       7
+# time=270000  clk_in=0  clk_out=0  cnt=       7
+# time=275000  clk_in=1  clk_out=0  cnt=       8
+# time=280000  clk_in=0  clk_out=0  cnt=       8
+# time=285000  clk_in=1  clk_out=0  cnt=       9
+# time=290000  clk_in=0  clk_out=0  cnt=       9
+# time=295000  clk_in=1  clk_out=0  cnt=       0
+# time=300000  clk_in=0  clk_out=0  cnt=       0
+# time=305000  clk_in=1  clk_out=1  cnt=       1
+# time=310000  clk_in=0  clk_out=1  cnt=       1
+# time=315000  clk_in=1  clk_out=1  cnt=       2
+# time=320000  clk_in=0  clk_out=1  cnt=       2
+# time=325000  clk_in=1  clk_out=1  cnt=       3
+# time=330000  clk_in=0  clk_out=1  cnt=       3
+# time=335000  clk_in=1  clk_out=0  cnt=       4
+# time=340000  clk_in=0  clk_out=0  cnt=       4
+# time=345000  clk_in=1  clk_out=0  cnt=       5
+# time=350000  clk_in=0  clk_out=0  cnt=       5
+# time=355000  clk_in=1  clk_out=0  cnt=       6
+# time=360000  clk_in=0  clk_out=0  cnt=       6
+# time=365000  clk_in=1  clk_out=0  cnt=       7
+# time=370000  clk_in=0  clk_out=0  cnt=       7
+# time=375000  clk_in=1  clk_out=0  cnt=       8
+# time=380000  clk_in=0  clk_out=0  cnt=       8
+# time=385000  clk_in=1  clk_out=0  cnt=       9
+# time=390000  clk_in=0  clk_out=0  cnt=       9
+# time=395000  clk_in=1  clk_out=0  cnt=       0
+# time=400000  clk_in=0  clk_out=0  cnt=       0
+# time=405000  clk_in=1  clk_out=1  cnt=       1
+# time=410000  clk_in=0  clk_out=1  cnt=       1
+# time=415000  clk_in=1  clk_out=1  cnt=       2
+# time=420000  clk_in=0  clk_out=1  cnt=       2
+# time=425000  clk_in=1  clk_out=1  cnt=       3
+# time=430000  clk_in=0  clk_out=1  cnt=       3
+# time=435000  clk_in=1  clk_out=0  cnt=       4
+# time=440000  clk_in=0  clk_out=0  cnt=       4
+# time=445000  clk_in=1  clk_out=0  cnt=       5
+# time=450000  clk_in=0  clk_out=0  cnt=       5
+# time=455000  clk_in=1  clk_out=0  cnt=       6
+# time=460000  clk_in=0  clk_out=0  cnt=       6
+# time=465000  clk_in=1  clk_out=0  cnt=       7
+# time=470000  clk_in=0  clk_out=0  cnt=       7
+# time=475000  clk_in=1  clk_out=0  cnt=       8
+# time=480000  clk_in=0  clk_out=0  cnt=       8
+# time=485000  clk_in=1  clk_out=0  cnt=       9
+# time=490000  clk_in=0  clk_out=0  cnt=       9
+# time=495000  clk_in=1  clk_out=0  cnt=       0
+# time=500000  clk_in=0  clk_out=0  cnt=       0
+# time=505000  clk_in=1  clk_out=1  cnt=       1
+# time=510000  clk_in=0  clk_out=1  cnt=       1
+# time=515000  clk_in=1  clk_out=1  cnt=       2
+# time=520000  clk_in=0  clk_out=1  cnt=       2
+# time=525000  clk_in=1  clk_out=1  cnt=       3
+# time=530000  clk_in=0  clk_out=1  cnt=       3
+# time=535000  clk_in=1  clk_out=0  cnt=       4
+# time=540000  clk_in=0  clk_out=0  cnt=       4
+# time=545000  clk_in=1  clk_out=0  cnt=       5
+# time=550000  clk_in=0  clk_out=0  cnt=       5
+# time=555000  clk_in=1  clk_out=0  cnt=       6
+# time=560000  clk_in=0  clk_out=0  cnt=       6
+# time=565000  clk_in=1  clk_out=0  cnt=       7
+# time=570000  clk_in=0  clk_out=0  cnt=       7
+# time=575000  clk_in=1  clk_out=0  cnt=       8
+# time=580000  clk_in=0  clk_out=0  cnt=       8
+# time=585000  clk_in=1  clk_out=0  cnt=       9
+# time=590000  clk_in=0  clk_out=0  cnt=       9
+# time=595000  clk_in=1  clk_out=0  cnt=       0
+# ** Note: $finish    : ../tb_clk_divider_duty.v(23)
+#    Time: 600 ns  Iteration: 0  Instance: /tb_clk_divider_duty
+# 1
+# Break in Module tb_clk_divider_duty at ../tb_clk_divider_duty.v line 23
+# Causality operation skipped due to absence of debug database file
+# End time: 17:18:44 on Jun 05,2026, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 1

@@ -1,0 +1,120 @@
+# do sim_counter.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:50:48 on Jun 05,2026
+# vlog ../counter.v 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 11:50:48 on Jun 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 11:50:48 on Jun 05,2026
+# vlog ../tb_counter.v 
+# -- Compiling module tb_counter
+# 
+# Top level modules:
+# 	tb_counter
+# End time: 11:50:48 on Jun 05,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_counter 
+# Start time: 11:50:48 on Jun 05,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb_counter(fast)
+# Loading work.counter(fast)
+# time=0   rst_n=0   en=x   cnt=  0
+# time=100000   rst_n=1   en=x   cnt=  0
+# time=200000   rst_n=1   en=1   cnt=  0
+# time=205000   rst_n=1   en=1   cnt=  1
+# time=215000   rst_n=1   en=1   cnt=  2
+# time=225000   rst_n=1   en=1   cnt=  3
+# time=235000   rst_n=1   en=1   cnt=  4
+# time=245000   rst_n=1   en=1   cnt=  5
+# time=255000   rst_n=1   en=1   cnt=  6
+# time=265000   rst_n=1   en=1   cnt=  7
+# time=275000   rst_n=1   en=1   cnt=  8
+# time=285000   rst_n=1   en=1   cnt=  9
+# time=295000   rst_n=1   en=1   cnt= 10
+# time=305000   rst_n=1   en=1   cnt= 11
+# time=315000   rst_n=1   en=1   cnt= 12
+# time=325000   rst_n=1   en=1   cnt= 13
+# time=335000   rst_n=1   en=1   cnt= 14
+# time=345000   rst_n=1   en=1   cnt= 15
+# time=355000   rst_n=1   en=1   cnt= 16
+# time=365000   rst_n=1   en=1   cnt= 17
+# time=375000   rst_n=1   en=1   cnt= 18
+# time=385000   rst_n=1   en=1   cnt= 19
+# time=395000   rst_n=1   en=1   cnt= 20
+# time=400000   rst_n=1   en=0   cnt= 20
+# time=600000   rst_n=1   en=1   cnt= 20
+# time=605000   rst_n=1   en=1   cnt= 21
+# time=615000   rst_n=1   en=1   cnt= 22
+# time=625000   rst_n=1   en=1   cnt= 23
+# time=635000   rst_n=1   en=1   cnt= 24
+# time=645000   rst_n=1   en=1   cnt= 25
+# time=655000   rst_n=1   en=1   cnt= 26
+# time=665000   rst_n=1   en=1   cnt= 27
+# time=675000   rst_n=1   en=1   cnt= 28
+# time=685000   rst_n=1   en=1   cnt= 29
+# time=695000   rst_n=1   en=1   cnt= 30
+# time=705000   rst_n=1   en=1   cnt= 31
+# time=715000   rst_n=1   en=1   cnt= 32
+# time=725000   rst_n=1   en=1   cnt= 33
+# time=735000   rst_n=1   en=1   cnt= 34
+# time=745000   rst_n=1   en=1   cnt= 35
+# time=755000   rst_n=1   en=1   cnt= 36
+# time=765000   rst_n=1   en=1   cnt= 37
+# time=775000   rst_n=1   en=1   cnt= 38
+# time=785000   rst_n=1   en=1   cnt= 39
+# time=795000   rst_n=1   en=1   cnt= 40
+# time=805000   rst_n=1   en=1   cnt= 41
+# time=815000   rst_n=1   en=1   cnt= 42
+# time=825000   rst_n=1   en=1   cnt= 43
+# time=835000   rst_n=1   en=1   cnt= 44
+# time=845000   rst_n=1   en=1   cnt= 45
+# time=855000   rst_n=1   en=1   cnt= 46
+# time=865000   rst_n=1   en=1   cnt= 47
+# time=875000   rst_n=1   en=1   cnt= 48
+# time=885000   rst_n=1   en=1   cnt= 49
+# time=895000   rst_n=1   en=1   cnt= 50
+# time=905000   rst_n=1   en=1   cnt= 51
+# time=915000   rst_n=1   en=1   cnt= 52
+# time=925000   rst_n=1   en=1   cnt= 53
+# time=935000   rst_n=1   en=1   cnt= 54
+# time=945000   rst_n=1   en=1   cnt= 55
+# time=955000   rst_n=1   en=1   cnt= 56
+# time=965000   rst_n=1   en=1   cnt= 57
+# time=975000   rst_n=1   en=1   cnt= 58
+# time=985000   rst_n=1   en=1   cnt= 59
+# time=995000   rst_n=1   en=1   cnt= 60
+# time=1005000   rst_n=1   en=1   cnt= 61
+# time=1015000   rst_n=1   en=1   cnt= 62
+# time=1025000   rst_n=1   en=1   cnt= 63
+# time=1035000   rst_n=1   en=1   cnt= 64
+# time=1045000   rst_n=1   en=1   cnt= 65
+# time=1055000   rst_n=1   en=1   cnt= 66
+# time=1065000   rst_n=1   en=1   cnt= 67
+# time=1075000   rst_n=1   en=1   cnt= 68
+# time=1085000   rst_n=1   en=1   cnt= 69
+# time=1095000   rst_n=1   en=1   cnt= 70
+# ** Note: $finish    : ../tb_counter.v(27)
+#    Time: 1100 ns  Iteration: 0  Instance: /tb_counter
+# End time: 11:50:49 on Jun 05,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

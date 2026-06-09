@@ -1,30 +1,29 @@
-# do sim_uart_tx.do
+# do sim_uart_rx.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
 # vmap work work 
 # Modifying modelsim.ini
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 20:17:47 on Jun 05,2026
-# vlog ../uart_tx.v 
-# -- Compiling module uart_tx
+# Start time: 00:59:15 on Jun 10,2026
+# vlog ../uart_rx.v 
+# -- Compiling module uart_rx
 # 
 # Top level modules:
-# 	uart_tx
-# End time: 20:17:47 on Jun 05,2026, Elapsed time: 0:00:00
+# 	uart_rx
+# End time: 00:59:15 on Jun 10,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 20:17:47 on Jun 05,2026
-# vlog ../tb/tb_uart_tx.v 
-# -- Compiling module tb_uart_tx
+# Start time: 00:59:15 on Jun 10,2026
+# vlog ../tb/tb_uart_rx.v 
+# -- Compiling module tb_uart_rx
 # 
 # Top level modules:
-# 	tb_uart_tx
-# End time: 20:17:47 on Jun 05,2026, Elapsed time: 0:00:00
+# 	tb_uart_rx
+# End time: 00:59:15 on Jun 10,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -voptargs="+acc" work.tb_uart_tx 
-# Start time: 20:17:47 on Jun 05,2026
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vopt-143) Recognized 1 FSM in module "uart_tx(fast)".
+# vsim -voptargs="+acc" work.tb_uart_rx 
+# Start time: 00:59:15 on Jun 10,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # //  ModelSim SE-64 10.6d Feb 24 2018
 # //
 # //  Copyright 1991-2018 Mentor Graphics Corporation
@@ -38,27 +37,221 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# Loading work.tb_uart_tx(fast)
-# Loading work.uart_tx(fast)
-# 
-# ===== 测试1: 数据值 =====
-#   [PASS] 0x55
-#   [PASS] 0x00
-#   [PASS] 0xff
-#   [PASS] 0xa5
-#   [PASS] 0x5a
-#   [PASS] 0x01
-#   [PASS] 0x80
-# 
-# ===== 测试2: 连续发送 =====
-#   [PASS] 连续两帧完成
-# 
-# ===== 测试3: 传输中复位 =====
-#   [PASS] 复位后 tx=1, tx_busy=0
-#   [PASS] 0x5a
-# 
-# ===== 结果: PASS=8  FAIL=0 =====
-# ** Note: $finish    : ../tb/tb_uart_tx.v(101)
-#    Time: 24251 ns  Iteration: 0  Instance: /tb_uart_tx
-# End time: 20:17:48 on Jun 05,2026, Elapsed time: 0:00:01
+# Loading work.tb_uart_rx(fast)
+# Loading work.uart_rx(fast)
+# t=0  rx=1  state=00  baud=  0  bit=0  data_out=0x00  done=0
+# ===== 测试1: 0x55 =====
+# t=801000  rx=0  state=00  baud=  0  bit=0  data_out=0x00  done=0
+# t=852000  rx=0  state=01  baud=  0  bit=0  data_out=0x00  done=0
+# t=876000  rx=0  state=01  baud=  1  bit=0  data_out=0x00  done=0
+# t=900000  rx=0  state=01  baud=  2  bit=0  data_out=0x00  done=0
+# t=924000  rx=0  state=01  baud=  3  bit=0  data_out=0x00  done=0
+# t=948000  rx=0  state=01  baud=  4  bit=0  data_out=0x00  done=0
+# t=972000  rx=0  state=01  baud=  5  bit=0  data_out=0x00  done=0
+# t=996000  rx=0  state=01  baud=  6  bit=0  data_out=0x00  done=0
+# t=1020000  rx=0  state=01  baud=  7  bit=0  data_out=0x00  done=0
+# t=1044000  rx=0  state=01  baud=  8  bit=0  data_out=0x00  done=0
+# t=1068000  rx=0  state=01  baud=  9  bit=0  data_out=0x00  done=0
+# t=1092000  rx=0  state=01  baud= 10  bit=0  data_out=0x00  done=0
+# t=1116000  rx=0  state=01  baud= 11  bit=0  data_out=0x00  done=0
+# t=1140000  rx=0  state=01  baud= 12  bit=0  data_out=0x00  done=0
+# t=1164000  rx=0  state=01  baud= 13  bit=0  data_out=0x00  done=0
+# t=1188000  rx=0  state=01  baud= 14  bit=0  data_out=0x00  done=0
+# t=1212000  rx=0  state=01  baud= 15  bit=0  data_out=0x00  done=0
+# t=1236000  rx=0  state=01  baud= 16  bit=0  data_out=0x00  done=0
+# t=1260000  rx=0  state=01  baud= 17  bit=0  data_out=0x00  done=0
+# t=1284000  rx=0  state=01  baud= 18  bit=0  data_out=0x00  done=0
+# t=1301000  rx=1  state=01  baud= 18  bit=0  data_out=0x00  done=0
+# t=1308000  rx=1  state=01  baud= 19  bit=0  data_out=0x00  done=0
+# t=1332000  rx=1  state=10  baud=  0  bit=0  data_out=0x00  done=0
+# t=1356000  rx=1  state=10  baud=  1  bit=0  data_out=0x00  done=0
+# t=1380000  rx=1  state=10  baud=  2  bit=0  data_out=0x00  done=0
+# t=1404000  rx=1  state=10  baud=  3  bit=0  data_out=0x00  done=0
+# t=1428000  rx=1  state=10  baud=  4  bit=0  data_out=0x00  done=0
+# t=1452000  rx=1  state=10  baud=  5  bit=0  data_out=0x00  done=0
+# t=1476000  rx=1  state=10  baud=  6  bit=0  data_out=0x00  done=0
+# t=1500000  rx=1  state=10  baud=  7  bit=0  data_out=0x00  done=0
+# t=1524000  rx=1  state=10  baud=  8  bit=0  data_out=0x00  done=0
+# t=1548000  rx=1  state=10  baud=  9  bit=0  data_out=0x00  done=0
+# t=1572000  rx=1  state=10  baud= 10  bit=0  data_out=0x00  done=0
+# t=1596000  rx=1  state=10  baud= 11  bit=0  data_out=0x00  done=0
+# t=1620000  rx=1  state=10  baud= 12  bit=0  data_out=0x00  done=0
+# t=1644000  rx=1  state=10  baud= 13  bit=0  data_out=0x00  done=0
+# t=1668000  rx=1  state=10  baud= 14  bit=0  data_out=0x00  done=0
+# t=1692000  rx=1  state=10  baud= 15  bit=0  data_out=0x00  done=0
+# t=1716000  rx=1  state=10  baud= 16  bit=0  data_out=0x00  done=0
+# t=1740000  rx=1  state=10  baud= 17  bit=0  data_out=0x00  done=0
+# t=1764000  rx=1  state=10  baud= 18  bit=0  data_out=0x00  done=0
+# t=1788000  rx=1  state=10  baud= 19  bit=0  data_out=0x00  done=0
+# t=1801000  rx=0  state=10  baud= 19  bit=0  data_out=0x00  done=0
+# t=1812000  rx=0  state=10  baud=  0  bit=1  data_out=0x01  done=0
+# t=1836000  rx=0  state=10  baud=  1  bit=1  data_out=0x01  done=0
+# t=1860000  rx=0  state=10  baud=  2  bit=1  data_out=0x01  done=0
+# t=1884000  rx=0  state=10  baud=  3  bit=1  data_out=0x01  done=0
+# t=1908000  rx=0  state=10  baud=  4  bit=1  data_out=0x01  done=0
+# t=1932000  rx=0  state=10  baud=  5  bit=1  data_out=0x01  done=0
+# t=1956000  rx=0  state=10  baud=  6  bit=1  data_out=0x01  done=0
+# t=1980000  rx=0  state=10  baud=  7  bit=1  data_out=0x01  done=0
+# t=2004000  rx=0  state=10  baud=  8  bit=1  data_out=0x01  done=0
+# t=2028000  rx=0  state=10  baud=  9  bit=1  data_out=0x01  done=0
+# t=2052000  rx=0  state=10  baud= 10  bit=1  data_out=0x01  done=0
+# t=2076000  rx=0  state=10  baud= 11  bit=1  data_out=0x01  done=0
+# t=2100000  rx=0  state=10  baud= 12  bit=1  data_out=0x01  done=0
+# t=2124000  rx=0  state=10  baud= 13  bit=1  data_out=0x01  done=0
+# t=2148000  rx=0  state=10  baud= 14  bit=1  data_out=0x01  done=0
+# t=2172000  rx=0  state=10  baud= 15  bit=1  data_out=0x01  done=0
+# t=2196000  rx=0  state=10  baud= 16  bit=1  data_out=0x01  done=0
+# t=2220000  rx=0  state=10  baud= 17  bit=1  data_out=0x01  done=0
+# t=2244000  rx=0  state=10  baud= 18  bit=1  data_out=0x01  done=0
+# t=2268000  rx=0  state=10  baud= 19  bit=1  data_out=0x01  done=0
+# t=2292000  rx=0  state=10  baud=  0  bit=2  data_out=0x01  done=0
+# t=2301000  rx=1  state=10  baud=  0  bit=2  data_out=0x01  done=0
+# t=2316000  rx=1  state=10  baud=  1  bit=2  data_out=0x01  done=0
+# t=2340000  rx=1  state=10  baud=  2  bit=2  data_out=0x01  done=0
+# t=2364000  rx=1  state=10  baud=  3  bit=2  data_out=0x01  done=0
+# t=2388000  rx=1  state=10  baud=  4  bit=2  data_out=0x01  done=0
+# t=2412000  rx=1  state=10  baud=  5  bit=2  data_out=0x01  done=0
+# t=2436000  rx=1  state=10  baud=  6  bit=2  data_out=0x01  done=0
+# t=2460000  rx=1  state=10  baud=  7  bit=2  data_out=0x01  done=0
+# t=2484000  rx=1  state=10  baud=  8  bit=2  data_out=0x01  done=0
+# t=2508000  rx=1  state=10  baud=  9  bit=2  data_out=0x01  done=0
+# t=2532000  rx=1  state=10  baud= 10  bit=2  data_out=0x01  done=0
+# t=2556000  rx=1  state=10  baud= 11  bit=2  data_out=0x01  done=0
+# t=2580000  rx=1  state=10  baud= 12  bit=2  data_out=0x01  done=0
+# t=2604000  rx=1  state=10  baud= 13  bit=2  data_out=0x01  done=0
+# t=2628000  rx=1  state=10  baud= 14  bit=2  data_out=0x01  done=0
+# t=2652000  rx=1  state=10  baud= 15  bit=2  data_out=0x01  done=0
+# t=2676000  rx=1  state=10  baud= 16  bit=2  data_out=0x01  done=0
+# t=2700000  rx=1  state=10  baud= 17  bit=2  data_out=0x01  done=0
+# t=2724000  rx=1  state=10  baud= 18  bit=2  data_out=0x01  done=0
+# t=2748000  rx=1  state=10  baud= 19  bit=2  data_out=0x01  done=0
+# t=2772000  rx=1  state=10  baud=  0  bit=3  data_out=0x05  done=0
+# t=2796000  rx=1  state=10  baud=  1  bit=3  data_out=0x05  done=0
+# t=2801000  rx=0  state=10  baud=  1  bit=3  data_out=0x05  done=0
+# t=2820000  rx=0  state=10  baud=  2  bit=3  data_out=0x05  done=0
+# t=2844000  rx=0  state=10  baud=  3  bit=3  data_out=0x05  done=0
+# t=2868000  rx=0  state=10  baud=  4  bit=3  data_out=0x05  done=0
+# t=2892000  rx=0  state=10  baud=  5  bit=3  data_out=0x05  done=0
+# t=2916000  rx=0  state=10  baud=  6  bit=3  data_out=0x05  done=0
+# t=2940000  rx=0  state=10  baud=  7  bit=3  data_out=0x05  done=0
+# t=2964000  rx=0  state=10  baud=  8  bit=3  data_out=0x05  done=0
+# t=2988000  rx=0  state=10  baud=  9  bit=3  data_out=0x05  done=0
+# t=3012000  rx=0  state=10  baud= 10  bit=3  data_out=0x05  done=0
+# t=3036000  rx=0  state=10  baud= 11  bit=3  data_out=0x05  done=0
+# t=3060000  rx=0  state=10  baud= 12  bit=3  data_out=0x05  done=0
+# t=3084000  rx=0  state=10  baud= 13  bit=3  data_out=0x05  done=0
+# t=3108000  rx=0  state=10  baud= 14  bit=3  data_out=0x05  done=0
+# t=3132000  rx=0  state=10  baud= 15  bit=3  data_out=0x05  done=0
+# t=3156000  rx=0  state=10  baud= 16  bit=3  data_out=0x05  done=0
+# t=3180000  rx=0  state=10  baud= 17  bit=3  data_out=0x05  done=0
+# t=3204000  rx=0  state=10  baud= 18  bit=3  data_out=0x05  done=0
+# t=3228000  rx=0  state=10  baud= 19  bit=3  data_out=0x05  done=0
+# t=3252000  rx=0  state=10  baud=  0  bit=4  data_out=0x05  done=0
+# t=3276000  rx=0  state=10  baud=  1  bit=4  data_out=0x05  done=0
+# t=3300000  rx=0  state=10  baud=  2  bit=4  data_out=0x05  done=0
+# t=3301000  rx=1  state=10  baud=  2  bit=4  data_out=0x05  done=0
+# t=3324000  rx=1  state=10  baud=  3  bit=4  data_out=0x05  done=0
+# t=3348000  rx=1  state=10  baud=  4  bit=4  data_out=0x05  done=0
+# t=3372000  rx=1  state=10  baud=  5  bit=4  data_out=0x05  done=0
+# t=3396000  rx=1  state=10  baud=  6  bit=4  data_out=0x05  done=0
+# t=3420000  rx=1  state=10  baud=  7  bit=4  data_out=0x05  done=0
+# t=3444000  rx=1  state=10  baud=  8  bit=4  data_out=0x05  done=0
+# t=3468000  rx=1  state=10  baud=  9  bit=4  data_out=0x05  done=0
+# t=3492000  rx=1  state=10  baud= 10  bit=4  data_out=0x05  done=0
+# t=3516000  rx=1  state=10  baud= 11  bit=4  data_out=0x05  done=0
+# t=3540000  rx=1  state=10  baud= 12  bit=4  data_out=0x05  done=0
+# t=3564000  rx=1  state=10  baud= 13  bit=4  data_out=0x05  done=0
+# t=3588000  rx=1  state=10  baud= 14  bit=4  data_out=0x05  done=0
+# t=3612000  rx=1  state=10  baud= 15  bit=4  data_out=0x05  done=0
+# t=3636000  rx=1  state=10  baud= 16  bit=4  data_out=0x05  done=0
+# t=3660000  rx=1  state=10  baud= 17  bit=4  data_out=0x05  done=0
+# t=3684000  rx=1  state=10  baud= 18  bit=4  data_out=0x05  done=0
+# t=3708000  rx=1  state=10  baud= 19  bit=4  data_out=0x05  done=0
+# t=3732000  rx=1  state=10  baud=  0  bit=5  data_out=0x15  done=0
+# t=3756000  rx=1  state=10  baud=  1  bit=5  data_out=0x15  done=0
+# t=3780000  rx=1  state=10  baud=  2  bit=5  data_out=0x15  done=0
+# t=3801000  rx=0  state=10  baud=  2  bit=5  data_out=0x15  done=0
+# t=3804000  rx=0  state=10  baud=  3  bit=5  data_out=0x15  done=0
+# t=3828000  rx=0  state=10  baud=  4  bit=5  data_out=0x15  done=0
+# t=3852000  rx=0  state=10  baud=  5  bit=5  data_out=0x15  done=0
+# t=3876000  rx=0  state=10  baud=  6  bit=5  data_out=0x15  done=0
+# t=3900000  rx=0  state=10  baud=  7  bit=5  data_out=0x15  done=0
+# t=3924000  rx=0  state=10  baud=  8  bit=5  data_out=0x15  done=0
+# t=3948000  rx=0  state=10  baud=  9  bit=5  data_out=0x15  done=0
+# t=3972000  rx=0  state=10  baud= 10  bit=5  data_out=0x15  done=0
+# t=3996000  rx=0  state=10  baud= 11  bit=5  data_out=0x15  done=0
+# t=4020000  rx=0  state=10  baud= 12  bit=5  data_out=0x15  done=0
+# t=4044000  rx=0  state=10  baud= 13  bit=5  data_out=0x15  done=0
+# t=4068000  rx=0  state=10  baud= 14  bit=5  data_out=0x15  done=0
+# t=4092000  rx=0  state=10  baud= 15  bit=5  data_out=0x15  done=0
+# t=4116000  rx=0  state=10  baud= 16  bit=5  data_out=0x15  done=0
+# t=4140000  rx=0  state=10  baud= 17  bit=5  data_out=0x15  done=0
+# t=4164000  rx=0  state=10  baud= 18  bit=5  data_out=0x15  done=0
+# t=4188000  rx=0  state=10  baud= 19  bit=5  data_out=0x15  done=0
+# t=4212000  rx=0  state=10  baud=  0  bit=6  data_out=0x15  done=0
+# t=4236000  rx=0  state=10  baud=  1  bit=6  data_out=0x15  done=0
+# t=4260000  rx=0  state=10  baud=  2  bit=6  data_out=0x15  done=0
+# t=4284000  rx=0  state=10  baud=  3  bit=6  data_out=0x15  done=0
+# t=4301000  rx=1  state=10  baud=  3  bit=6  data_out=0x15  done=0
+# t=4308000  rx=1  state=10  baud=  4  bit=6  data_out=0x15  done=0
+# t=4332000  rx=1  state=10  baud=  5  bit=6  data_out=0x15  done=0
+# t=4356000  rx=1  state=10  baud=  6  bit=6  data_out=0x15  done=0
+# t=4380000  rx=1  state=10  baud=  7  bit=6  data_out=0x15  done=0
+# t=4404000  rx=1  state=10  baud=  8  bit=6  data_out=0x15  done=0
+# t=4428000  rx=1  state=10  baud=  9  bit=6  data_out=0x15  done=0
+# t=4452000  rx=1  state=10  baud= 10  bit=6  data_out=0x15  done=0
+# t=4476000  rx=1  state=10  baud= 11  bit=6  data_out=0x15  done=0
+# t=4500000  rx=1  state=10  baud= 12  bit=6  data_out=0x15  done=0
+# t=4524000  rx=1  state=10  baud= 13  bit=6  data_out=0x15  done=0
+# t=4548000  rx=1  state=10  baud= 14  bit=6  data_out=0x15  done=0
+# t=4572000  rx=1  state=10  baud= 15  bit=6  data_out=0x15  done=0
+# t=4596000  rx=1  state=10  baud= 16  bit=6  data_out=0x15  done=0
+# t=4620000  rx=1  state=10  baud= 17  bit=6  data_out=0x15  done=0
+# t=4644000  rx=1  state=10  baud= 18  bit=6  data_out=0x15  done=0
+# t=4668000  rx=1  state=10  baud= 19  bit=6  data_out=0x15  done=0
+# t=4692000  rx=1  state=10  baud=  0  bit=7  data_out=0x55  done=0
+# t=4716000  rx=1  state=10  baud=  1  bit=7  data_out=0x55  done=0
+# t=4740000  rx=1  state=10  baud=  2  bit=7  data_out=0x55  done=0
+# t=4764000  rx=1  state=10  baud=  3  bit=7  data_out=0x55  done=0
+# t=4788000  rx=1  state=10  baud=  4  bit=7  data_out=0x55  done=0
+# t=4801000  rx=0  state=10  baud=  4  bit=7  data_out=0x55  done=0
+# t=4812000  rx=0  state=10  baud=  5  bit=7  data_out=0x55  done=0
+# t=4836000  rx=0  state=10  baud=  6  bit=7  data_out=0x55  done=0
+# t=4860000  rx=0  state=10  baud=  7  bit=7  data_out=0x55  done=0
+# t=4884000  rx=0  state=10  baud=  8  bit=7  data_out=0x55  done=0
+# t=4908000  rx=0  state=10  baud=  9  bit=7  data_out=0x55  done=0
+# t=4932000  rx=0  state=10  baud= 10  bit=7  data_out=0x55  done=0
+# t=4956000  rx=0  state=10  baud= 11  bit=7  data_out=0x55  done=0
+# t=4980000  rx=0  state=10  baud= 12  bit=7  data_out=0x55  done=0
+# t=5004000  rx=0  state=10  baud= 13  bit=7  data_out=0x55  done=0
+# t=5028000  rx=0  state=10  baud= 14  bit=7  data_out=0x55  done=0
+# t=5052000  rx=0  state=10  baud= 15  bit=7  data_out=0x55  done=0
+# t=5076000  rx=0  state=10  baud= 16  bit=7  data_out=0x55  done=0
+# t=5100000  rx=0  state=10  baud= 17  bit=7  data_out=0x55  done=0
+# t=5124000  rx=0  state=10  baud= 18  bit=7  data_out=0x55  done=0
+# t=5148000  rx=0  state=10  baud= 19  bit=7  data_out=0x55  done=0
+# t=5172000  rx=0  state=11  baud=  0  bit=7  data_out=0x55  done=0
+# t=5196000  rx=0  state=11  baud=  1  bit=7  data_out=0x55  done=0
+# t=5220000  rx=0  state=11  baud=  2  bit=7  data_out=0x55  done=0
+# t=5244000  rx=0  state=11  baud=  3  bit=7  data_out=0x55  done=0
+# t=5268000  rx=0  state=11  baud=  4  bit=7  data_out=0x55  done=0
+# t=5292000  rx=0  state=11  baud=  5  bit=7  data_out=0x55  done=0
+# t=5301000  rx=1  state=11  baud=  5  bit=7  data_out=0x55  done=0
+# t=5316000  rx=1  state=11  baud=  6  bit=7  data_out=0x55  done=0
+# t=5340000  rx=1  state=11  baud=  7  bit=7  data_out=0x55  done=0
+# t=5364000  rx=1  state=11  baud=  8  bit=7  data_out=0x55  done=0
+# t=5388000  rx=1  state=11  baud=  9  bit=7  data_out=0x55  done=0
+# t=5412000  rx=1  state=11  baud= 10  bit=7  data_out=0x55  done=0
+# t=5436000  rx=1  state=11  baud= 11  bit=7  data_out=0x55  done=0
+# t=5460000  rx=1  state=11  baud= 12  bit=7  data_out=0x55  done=0
+# t=5484000  rx=1  state=11  baud= 13  bit=7  data_out=0x55  done=0
+# t=5508000  rx=1  state=11  baud= 14  bit=7  data_out=0x55  done=0
+# t=5532000  rx=1  state=11  baud= 15  bit=7  data_out=0x55  done=0
+# t=5556000  rx=1  state=11  baud= 16  bit=7  data_out=0x55  done=0
+# t=5580000  rx=1  state=11  baud= 17  bit=7  data_out=0x55  done=0
+# t=5604000  rx=1  state=11  baud= 18  bit=7  data_out=0x55  done=0
+# t=5628000  rx=1  state=11  baud= 19  bit=7  data_out=0x55  done=0
+# t=5652000  rx=1  state=00  baud=  0  bit=7  data_out=0x55  done=1
+# t=5676000  rx=1  state=00  baud=  0  bit=0  data_out=0x55  done=0
+# End time: 00:59:16 on Jun 10,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

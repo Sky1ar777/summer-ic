@@ -1,0 +1,114 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Admin/Desktop/summer-ic/week01-verilog/03-cdc/sim
+T_opt
+!s110 1780728278
+V?2LabZS^nPG71?dZY<43k0
+04 11 4 work tb_sync_2ff fast 0
+=1-345a60e700e6-6a23c1d5-e1-5df4
+Z1 o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+Z3 OL;O;10.6d;65
+R0
+T_opt1
+!s110 1781021592
+VL07PgE1i`@eNJK;6=_VnV3
+04 13 4 work tb_pulse_sync fast 0
+=1-345a60e700e6-6a283b96-10b-5f98
+R1
+R2
+n@_opt1
+R3
+R0
+vpulse_sync
+Z4 !s110 1781021623
+!i10b 1
+!s100 `AMLbE?oCO51ZV6WoX7W82
+IEX1HL8]MVlSQUlYH8YfeP0
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1781021375
+8../pulse_sync.v
+F../pulse_sync.v
+L0 1
+Z6 OL;L;10.6d;65
+r1
+!s85 0
+31
+Z7 !s108 1781021623.000000
+!s107 ../pulse_sync.v|
+!s90 -reportprogress|300|../pulse_sync.v|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vsync_2ff
+Z9 !s110 1780728276
+!i10b 1
+!s100 `7SJWB@TcOjHShB7mcaBW2
+IWa;2eZOiRd=[TmX[8z19j0
+R5
+R0
+w1780728267
+8../sync_2ff.v
+F../sync_2ff.v
+L0 1
+R6
+r1
+!s85 0
+31
+Z10 !s108 1780728276.000000
+!s107 ../sync_2ff.v|
+!s90 -reportprogress|300|../sync_2ff.v|
+!i113 0
+R8
+R2
+vtb_pulse_sync
+R4
+!i10b 1
+!s100 g?2TjimXGo]jM]dE6^BVj0
+I0bMWdU4[TIgEXKIQCTiEb2
+R5
+R0
+w1781021366
+8../tb/tb_pulse_sync.v
+F../tb/tb_pulse_sync.v
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+!s107 ../tb/tb_pulse_sync.v|
+!s90 -reportprogress|300|../tb/tb_pulse_sync.v|
+!i113 0
+R8
+R2
+vtb_sync_2ff
+R9
+!i10b 1
+!s100 8n9>C:e2]SVKZh5JW1gZ:2
+I750gQ@N=M0VhGLGd^3hDl2
+R5
+R0
+w1780728238
+8../tb/tb_sync_2ff.v
+F../tb/tb_sync_2ff.v
+L0 2
+R6
+r1
+!s85 0
+31
+R10
+!s107 ../tb/tb_sync_2ff.v|
+!s90 -reportprogress|300|../tb/tb_sync_2ff.v|
+!i113 0
+R8
+R2

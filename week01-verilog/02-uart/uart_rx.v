@@ -11,89 +11,78 @@ module uart_rx #(
 );
 
     localparam BAUD_TICK = CLK_FREQ / BAUD_RATE;
+    localparam HALF_BIT  = BAUD_TICK / 2;
 
-    localparam IDLE = 2'b00,
-               WAIT = 2'b01,   // 等待起始位结束
-               RCV  = 2'b10,   // 接收数据
-               STOP = 2'b11;
+    reg [8:0] cnt;
+    reg [3:0] bits;     // {count, done} = 0-9, 10=done
 
-    reg [1:0] state;
-    reg [8:0] baud_cnt;
-    reg [2:0] bit_cnt;
-
-    // rx同步+边沿检测（2-flop）
-    reg rx_ff1, rx_ff2, rx_ff3;
-    wire rx_falling;
+    reg rx_ff1, rx_ff2;
 
     always @(posedge clk or negedge rst_n) begin
         if(!rst_n) begin
             rx_ff1 <= 1'b1;
             rx_ff2 <= 1'b1;
-            rx_ff3 <= 1'b1;
         end
         else begin
             rx_ff1 <= rx;
             rx_ff2 <= rx_ff1;
-            rx_ff3 <= rx_ff2;
         end
     end
-    assign rx_falling = ~rx_ff2 & rx_ff3;   // 检测下降沿
 
     always @(posedge clk or negedge rst_n) begin
         if(!rst_n) begin
-            state    <= IDLE;
-            baud_cnt <= 0;
-            bit_cnt  <= 0;
+            cnt      <= 0;
+            bits     <= 0;
             data_out <= 8'b0;
             rx_done  <= 1'b0;
         end
         else begin
             rx_done <= 1'b0;
 
-            case(state)
-                IDLE: begin
-                    baud_cnt <= 0;
-                    bit_cnt  <= 0;
-                    if(rx_falling)
-                        state <= WAIT;
-                end
-
-                // 等BAUD_TICK个时钟（起始位结束）
-                WAIT: begin
-                    if(baud_cnt == BAUD_TICK - 1) begin
-                        state    <= RCV;
-                        baud_cnt <= 0;
-                        bit_cnt  <= 0;
+            if(bits == 0) begin
+                cnt <= 0;
+                if(rx_ff2 == 1'b0)
+                    bits <= 1;                   // START位开始
+            end
+            else if(bits <= 9) begin
+                if(cnt == BAUD_TICK - 1) begin
+                    cnt <= 0;
+                    if(bits == 1) begin          // 抛弃START位
+                        bits <= 2;
                     end
-                    else
-                        baud_cnt <= baud_cnt + 1'b1;
-                end
-
-                // 每BAUD_TICK个时钟读一个bit（在bit末尾采样）
-                RCV: begin
-                    if(baud_cnt == BAUD_TICK - 1) begin
-                        data_out[bit_cnt] <= rx_ff2;
-                        baud_cnt <= 0;
-                        if(bit_cnt == 3'd7)
-                            state <= STOP;
-                        else
-                            bit_cnt <= bit_cnt + 1'b1;
+                    else if(bits == 2) begin     // bit0
+                        data_out[0] <= rx_ff2; bits <= 3;
                     end
-                    else
-                        baud_cnt <= baud_cnt + 1'b1;
-                end
-
-                // 等停止位结束
-                STOP: begin
-                    if(baud_cnt == BAUD_TICK - 1) begin
-                        state    <= IDLE;
-                        rx_done  <= 1'b1;
-                        baud_cnt <= 0;
+                    else if(bits == 3) begin     // bit1
+                        data_out[1] <= rx_ff2; bits <= 4;
                     end
-                    else
-                        baud_cnt <= baud_cnt + 1'b1;
+                    else if(bits == 4) begin     // bit2
+                        data_out[2] <= rx_ff2; bits <= 5;
+                    end
+                    else if(bits == 5) begin     // bit3
+                        data_out[3] <= rx_ff2; bits <= 6;
+                    end
+                    else if(bits == 6) begin     // bit4
+                        data_out[4] <= rx_ff2; bits <= 7;
+                    end
+                    else if(bits == 7) begin     // bit5
+                        data_out[5] <= rx_ff2; bits <= 8;
+                    end
+                    else if(bits == 8) begin     // bit6
+                        data_out[6] <= rx_ff2; bits <= 9;
+                    end
+                    else if(bits == 9) begin     // bit7+停止位
+                        data_out[7] <= rx_ff2;
+                        bits <= 10;
+                    end
                 end
-            endcase
+                else
+                    cnt <= cnt + 1'b1;
+            end
+            else begin
+                rx_done <= 1'b1;    // 通知外部
+                bits    <= 0;
+            end
         end
     end
 

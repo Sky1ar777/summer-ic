@@ -1,0 +1,82 @@
+# do sim_async_fifo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim SE-64 vmap 10.6d Lib Mapping Utility 2018.02 Feb 24 2018
+# vmap work work 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 13:09:19 on Jun 10,2026
+# vlog ../sync_2ff.v 
+# -- Compiling module sync_2ff
+# 
+# Top level modules:
+# 	sync_2ff
+# End time: 13:09:19 on Jun 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 13:09:19 on Jun 10,2026
+# vlog ../sync2gray.v 
+# -- Compiling module sync2gray
+# 
+# Top level modules:
+# 	sync2gray
+# End time: 13:09:19 on Jun 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 13:09:19 on Jun 10,2026
+# vlog ../fifo_mem.v 
+# -- Compiling module fifo_mem
+# 
+# Top level modules:
+# 	fifo_mem
+# End time: 13:09:19 on Jun 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 13:09:19 on Jun 10,2026
+# vlog ../async_fifo.v 
+# -- Compiling module async_fifo
+# 
+# Top level modules:
+# 	async_fifo
+# End time: 13:09:19 on Jun 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+# Start time: 13:09:19 on Jun 10,2026
+# vlog ../tb/tb_async_fifo.v 
+# -- Compiling module tb_async_fifo
+# 
+# Top level modules:
+# 	tb_async_fifo
+# End time: 13:09:19 on Jun 10,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" work.tb_async_fifo 
+# Start time: 13:09:19 on Jun 10,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 10.6d Feb 24 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.tb_async_fifo(fast)
+# Loading work.async_fifo(fast)
+# Loading work.fifo_mem(fast)
+# Loading work.sync2gray(fast)
+# Loading work.sync_2ff(fast)
+# 写入 16 个数据...
+# wfull=1 (应为1)
+# 读出 16 个数据...
+# rempty=1 (应为1)
+# 同时读写...
+# 
+# ★★ ALL PASS ★★
+# ** Note: $finish    : ../tb/tb_async_fifo.v(81)
+#    Time: 946 ns  Iteration: 0  Instance: /tb_async_fifo
+# End time: 13:09:21 on Jun 10,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0

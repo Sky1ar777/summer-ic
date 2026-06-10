@@ -9,54 +9,105 @@ z2
 cModel Technology
 Z0 dC:/Users/Admin/Desktop/summer-ic/week01-verilog/02-uart/sim
 T_opt
-!s110 1781024296
-V7LcYg7>^eSW8anaoPj?m32
-04 10 4 work tb_uart_rx fast 0
-=1-345a60e700e6-6a284627-3a6-c04
-o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+!s110 1781027402
+V^XgJVEHN^znGDEE9@ENOz3
+Z1 04 11 4 work tb_uart_top fast 0
+=1-345a60e700e6-6a28524a-2aa-6378
+Z2 o-quiet -auto_acc_if_foreign -work work +acc
+Z3 tCvgOpt 0
 n@_opt
-OL;O;10.6d;65
+Z4 OL;O;10.6d;65
 R0
-vtb_uart_rx
-Z2 !s110 1781024355
+T_opt1
+!s110 1781027511
+VbJSFiQ1_@mES@Ko=Ad7G21
+R1
+=1-345a60e700e6-6a2852b7-156-5a54
+R2
+R3
+n@_opt1
+R4
+vtb_uart_top
+Z5 !s110 1781027510
 !i10b 1
-!s100 JLhzbC]B58K[hV24?NH@L2
-IKOlIIoTj4IY?3T3^DLTGJ2
-Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s100 2zQhSg8Di9CoeeB1gFn7M2
+IGlKXLW7CKRP:Be1a4l]JE2
+Z6 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1781024264
-8../tb/tb_uart_rx.v
-F../tb/tb_uart_rx.v
+w1781027382
+8../tb/tb_uart_top.v
+F../tb/tb_uart_top.v
 L0 2
-Z4 OL;L;10.6d;65
+Z7 OL;L;10.6d;65
 r1
 !s85 0
 31
-Z5 !s108 1781024355.000000
-!s107 ../tb/tb_uart_rx.v|
-!s90 ../tb/tb_uart_rx.v|
+Z8 !s108 1781027510.000000
+!s107 ../tb/tb_uart_top.v|
+!s90 ../tb/tb_uart_top.v|
 !i113 0
-Z6 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
-vuart_rx
-R2
-!i10b 1
-!s100 licbPEUOYTon7<QlfRRh^3
-I8RLAkSH[C0@]3_4mej82C2
+Z9 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R3
+vuart_rx
+R5
+!i10b 1
+!s100 OLAKWhnT?:<WRhHcDI4bW1
+Ij69=<l<?c^6Q^?o43=?620
+R6
 R0
-w1781024174
+w1781027358
 8../uart_rx.v
 F../uart_rx.v
 L0 1
-R4
+R7
 r1
 !s85 0
 31
-R5
+R8
 !s107 ../uart_rx.v|
 !s90 ../uart_rx.v|
 !i113 0
+R9
+R3
+vuart_top
+R5
+!i10b 1
+!s100 f?ANTl:hA9b;bgCCY`2G@0
+I17?9gjc::;8`ldFWXC@z21
 R6
-R1
+R0
+w1781025432
+8../uart_top.v
+F../uart_top.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 ../uart_top.v|
+!s90 ../uart_top.v|
+!i113 0
+R9
+R3
+vuart_tx
+R5
+!i10b 1
+!s100 ZYHnfXkalD3CeM;R7ZSH22
+IUGM3P2b`ZnWn=QQK>o=l>3
+R6
+R0
+w1780660061
+8../uart_tx.v
+F../uart_tx.v
+L0 1
+R7
+r1
+!s85 0
+31
+R8
+!s107 ../uart_tx.v|
+!s90 ../uart_tx.v|
+!i113 0
+R9
+R3
